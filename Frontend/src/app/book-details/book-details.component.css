@@ -1,0 +1,67 @@
+.card {
+  background-image: url(https://img.freepik.com/free-vector/books-seamless-pattern-doodle-outline-textbooks_107791-9584.jpg?size=626&ext=jpg&ga=GA1.1.1162631686.1687788055&semt=ais); 
+  background-color: #c3b7b7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px ;
+    width:50%;
+    padding: 20px;
+    justify-items: center;
+    margin: 20px auto;
+  }
+.card-body{
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffffb3;
+}
+  .card-title {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+  }
+  .card-item{
+    display: flex;
+    justify-content: left;
+  }
+  .card-text {
+    margin-bottom: 8px;
+  }
+  .rating-display{
+    pointer-events: none;
+  }
+  .details-label {
+    font-weight: bold;
+  }
+  
+  .details-value {
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+  
+  .text-danger {
+    font-weight: bold;
+    color: red;
+  }
+  .card-rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+  .btn-primary {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 48%;
+    color: #fff;
+    background-color:  #dc3545;
+    border-color:  #dc3545;
+    transition: background-color 0.3s ease;
+  }
+  
+ .btn-primary:hover {
+    background-color:#d84b59;
+  }
+  

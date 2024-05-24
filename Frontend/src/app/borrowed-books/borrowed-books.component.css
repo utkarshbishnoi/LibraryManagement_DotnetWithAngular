@@ -1,0 +1,60 @@
+.container {
+  margin-top: 50px;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  background-image: url(https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149329902.jpg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  border: 1px solid #ced4da;
+}
+.card-description{
+  width: 60%;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  height: 26px;
+}
+
+.card-body {
+  padding: 20px;
+  
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 60%;
+}
+
+.card-footer {
+  padding: 20px;
+}
+
+.btn-danger {
+  background-color: #dc3545; 
+  color: #fff; 
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333; 
+}
+
+.btn-primary {
+  display: inline-block;
+  color: black;
+  background-color:  #dc3545;
+  border-color:  #dc3545;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d84b59;
+}

@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+<div class="category-search-container">
+  <div class="category-search">
+    <div class="search">
+      <label for="search">Search:</label>
+      <input [(ngModel)]="searchInput" (ngModelChange)="searchBooks()" type="text" title="Search for books" />
+    </div>
+  </div>
+</div>
+
+<ul class="product-list">
+  <li class="product-list-item" *ngFor="let item of getCurrentPageBooks()">
+    <div class="item-container" [routerLink]="['/book-details', item.id]">
+      <h5 class="item-title">{{ item.name }}</h5>
+      <p class="item-description">{{ item.genre }}</p>
+      <!-- <p class="item-description">{{ item.description }}</p> -->
+      <p class="item-description">{{ item.description.length > 60 ? item.description.slice(0, 60) + '...' : item.description }}</p>
+
+      <p class="item-description">{{ item.author }}</p>
+      <p class="item-availibilty" *ngIf="item.isBookAvailable">Available</p>
+      <p class="item-out-of-stock" *ngIf="!item.isBookAvailable">Out of Stock</p>
+    </div>
+    <div class="button-container">
+      <ng-container *ngIf="isloggedIn && item.isBookAvailable && item.lentByUserId !== userId">
+        <button (click)="borrowBook(item.id)">Borrow Book</button>
+      </ng-container>
+    </div>
+  </li>
+</ul>
+
+<div class="pagination">
+  <button class="btn" [disabled]="currentPage === 1" (click)="goToPreviousPage()">
+    <i class="fa-solid fa-arrow-left"></i>
+  </button>
+  <span>{{ currentPage }} / {{ totalPages }}</span>
+  <button class="btn" [disabled]="currentPage === totalPages" (click)="goToNextPage()">
+    <i class="fa-solid fa-arrow-right"></i>
+  </button>
+</div>

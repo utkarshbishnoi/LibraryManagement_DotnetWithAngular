@@ -1,0 +1,39 @@
+<header>
+  <nav class="nav">
+    <div class="left">
+      <div class="content">
+        <div class="logo" routerLink="/books"></div>
+      </div>
+    </div>
+    <div class="mid">
+      <div class="content">
+        <a class="text-dark" routerLink="/books">Books</a>
+        <ng-container *ngIf="isloggedIn">
+          <a class="text-dark" routerLink="/add-book">Add Book</a>
+          <a class="text-dark" routerLink="/borrowed-books">Books Borrowed</a>
+          <a class="text-dark" routerLink="/my-added-books">Added Books</a>
+        </ng-container>
+      </div>
+    </div>
+    <div class="right">
+      <div class="content">
+        <ng-container *ngIf="isloggedIn">
+          <div class="details">
+            <h6>Available Tokens: {{ tokens }}</h6>
+          </div>
+          <div class="details">
+            <h6>User: {{ userName }}</h6>
+          </div>
+          <div class="text-button">
+            <i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #de1b1b; height: 20px;"(click)="logout()"></i> 
+          </div>
+        </ng-container>
+        <ng-container *ngIf="!isloggedIn">
+          <div class="text-button">
+            <i class="fa-solid fa-right-to-bracket fa-shake fa-2xl" style="color: #1030d1;" routerLink="/user-login"></i>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </nav>
+</header>

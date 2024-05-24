@@ -1,0 +1,122 @@
+.category-search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.category-search {
+  display: flex;
+  align-items: center;
+}
+
+.search label {
+  color: #333;
+  margin-right: 10px;
+}
+
+input {
+  width: 400px;
+  height: 35px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product-list-item {
+  flex: 0 1 calc(30% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-image: url(https://dreieck.com/en/wp-content/uploads/sites/2/2023/03/opened-book-04-adding-thickness-850x638.png);
+  background-size: contain;
+  
+}
+
+.item-container {
+  cursor: pointer;
+}
+
+.item-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.item-description {
+  margin-top: 5px;
+  color: #555;
+}
+
+.item-availibilty {
+  color: green;
+}
+
+.item-out-of-stock {
+  color: red;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button-container button {
+  height: 40px;
+  width: 80%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-weight: bold;
+  color: #333;
+}

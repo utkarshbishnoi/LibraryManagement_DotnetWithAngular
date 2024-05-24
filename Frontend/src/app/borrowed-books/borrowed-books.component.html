@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h3 class="card-title text-center mb-4">Borrowed Books</h3>
+      <div class="card-deck">
+        <div *ngFor="let item of books" class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">{{ item.genre }}</p>
+            <p class="card-text">{{ item.description }}</p>
+            <p class="card-text">{{ item.author }}</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-danger btn-block" (click)="returnBook(item.id)">Return</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div >
+    <a class="btn btn-primary" routerLink="/books">Back</a>
+  </div>
+</div>

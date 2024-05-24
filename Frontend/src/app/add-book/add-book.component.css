@@ -1,0 +1,47 @@
+.custom-form {
+  background-image: url(https://img.freepik.com/free-photo/silver-pen-paper_1232-1346.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+ 
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form-title {
+  color:#343a40;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+label{
+  font-weight: bold;
+}
+input,textarea {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 8px;}
+.btn{
+  
+  background-color: #007dff; 
+  border-color: #007bff;
+  color: #fff;
+  width: 100px;
+  cursor: pointer;
+}
+.btn-primary {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 43%;
+  color: black;
+  background-color:  #dc3545;
+  border-color:  #dc3545;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d84b59;
+}
+

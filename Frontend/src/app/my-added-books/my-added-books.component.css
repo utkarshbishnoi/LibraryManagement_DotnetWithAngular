@@ -1,0 +1,56 @@
+.container {
+  margin-top: 50px;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #f8f9fa; 
+  border: 1px solid #ced4da;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.card-description{
+  width: 60%;
+}
+.card-body {
+  padding: 20px;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.order-item{
+  background-image: url(https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149329902.jpg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.card-quantity {
+  color: #28a745;
+}
+
+.card-out-of-stock {
+  color: #dc3545; 
+}
+.card-footer {
+  padding: 20px;
+}
+.btn-primary {
+  display: inline-block;
+ 
+  color: black;
+  background-color:  #dc3545;
+  border-color:  #dc3545;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d84b59;
+}
